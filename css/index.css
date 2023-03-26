@@ -1,8 +1,10 @@
 body {
     margin: 0;
-    background-image: url(images/background-resize.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url(../images/background-resize.png);
+
+
 }
 
 .italic-text {
@@ -10,53 +12,6 @@ body {
     font-style: italic;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.header-button-container {
-    margin-right: 70px;
-}
-
-.header-logo {
-    color: rgb(255, 87, 87);
-    font-family: IBM Plex Mono;
-    font-size: 36px;
-    margin-left: 70px;
-}
-
-.header-button {
-    margin-left: 15px;
-    padding: 6px 30px 6px 30px;
-
-    color: white;
-    font-size: 18px;
-    font-family: Roboto;
-    font-weight: 500;
-
-    background-color: transparent;
-    border: solid;
-    border-color: white;
-    border-width: 1px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.header-button:hover {
-    background-color: white;
-    color: black;
-    transition: 0.55s;
-}
-
-.header-button:active {
-    background-color: rgb(154, 154, 154);
-    transition: 0.1s;
-}
 
 .center-container {
     width: 43%;
