@@ -1,0 +1,57 @@
+.login-form {
+    display: grid;
+    background-color: rgba(0,0,0, .8);
+    background-position: left;
+    border: 12px solid;
+    border-color: rgba(246, 72, 72, .7);
+    border-radius: 50px;
+    margin: 0;
+
+}
+
+body {
+    background-image: url(../images/background-login.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+.label-font{
+    font-family: "IBM Plex Mono";
+    font-size: 42px;
+    color: white;
+}
+
+
+.login-button {
+    font-family: "IBM Plex Mono";
+    font-size: 42px;
+    color: white;
+    margin: 40px;
+
+}
+
+.login-button:hover{
+    cursor: pointer;
+}
+
+.label-container{
+    padding: 30px;
+}
+
+
+.input-container{
+    padding: 15px;
+    color: gray;
+    border-radius: 50px;
+    border: 0;
+}
+
+.button-container{
+    padding: 15px;
+    background-color: red;
+    border-radius: 50px;
+    border: 0;
+}
