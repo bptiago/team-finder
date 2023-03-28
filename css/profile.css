@@ -1,0 +1,69 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.perfil-background {
+    width: 800px;
+    background: rgba(139,139,139,0.8);
+    height: 100%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    mso-border-shadow: yes;
+}
+
+
+body {
+    background-image: url(../images/background-perfil.png);
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    padding: 0;
+
+}
+
+.avatar-gap {
+    /*background: red;*/
+    padding: 40px;
+
+}
+
+.perfil-section {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-content: center;
+    align-items: center;
+    justify-content: start;
+    margin-left: 40px;
+
+
+}
+
+.avatar-container {
+    border: 7px solid;
+    align-self: flex-start;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 50%;
+    border-color: white;
+    background-image: url(../images/killjoy-icon.png);
+    background-size: cover;
+}
+
+
+.username {
+    color: white;
+    font-family: "IBM Plex Mono";
+    font-size: 60px;
+}
+
+.perfil-info {
+    color: white;
+    font-family: "IBM Plex Mono";
+    font-size: 40px;
+}
