@@ -20,25 +20,33 @@ body {
 
 .label-font{
     font-family: "IBM Plex Mono";
-    font-size: 42px;
+    font-weight: bold;
+    font-size: 40px;
     color: white;
 }
 
 
 .login-button {
-    font-family: "IBM Plex Mono";
-    font-size: 42px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 38px;
     color: white;
     margin: 40px;
-
 }
 
 .login-button:hover{
     cursor: pointer;
+    background-color: rgb(187, 56, 56);
+    transition: background-color 0.10s;
+}
+
+.login-button:active {
+    background-color: rgb(113, 35, 35);
 }
 
 .label-container{
     padding: 30px;
+    padding-bottom: 15px;
 }
 
 
@@ -47,11 +55,13 @@ body {
     color: gray;
     border-radius: 50px;
     border: 0;
+    font-size: 20px;
+    font-family: Roboto;
 }
 
 .button-container{
     padding: 15px;
-    background-color: red;
+    background-color: rgb(255, 87, 87);
     border-radius: 50px;
     border: 0;
 }
