@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Roboto:wght@400;500&family=Sarabun:wght@100;300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <link rel="stylesheet" href="./componentes/navbar.css">
+
+    <title>TeamFinder</title>
+</head>
+<body>
+    <div class="header">
+        <a class="header-logo" href="index.html">
+            Team<span class="italic-text">Finder</span>
+        </a>
+        <div class="header-button-container">
+            <a href="login.html"> <button class="header-button"> Entrar </button></a>
+        </div>
+    </div>
+    <div class="container-cadastro">
+         <!--container do cadastro-->
+        <div class="cadastro-title">CADASTRE-SE</div>
+         <div class="form-container">
+            <form class="form-elements">
+                <label for="id">ID DE USUÁRIO</label>
+                <input type="text" id="id" placeholder="Digite seu ID">
+                <label for="ano">ANO DE NASCIMENTO</label>
+                <input type="date" id="ano">
+                <label for="local">LOCALIDADE</label>
+                <input type="text" id="local" placeholder="Qual cidade você mora?">
+                <label for="idioma">IDIOMA</label>
+                <input type="text" id="idioma" placeholder="Você fala mais de um idioma?">
+                <label for="senha">SENHA</label>
+                <input type="password" id="senha" placeholder="Digite sua senha">
+                <label for="confsenha">CONFIRMAR SENHA</label>
+                <input type="password" id="confsenha" placeholder="Confirme sua senha">
+                <div class="button-container">
+                    <button class="form-button">CADASTRAR</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

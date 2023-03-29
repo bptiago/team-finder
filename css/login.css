@@ -36,12 +36,12 @@ body {
 
 .login-button:hover{
     cursor: pointer;
-    background-color: rgb(187, 56, 56);
+    background-color: rgb(207, 72, 72);
     transition: background-color 0.10s;
 }
 
 .login-button:active {
-    background-color: rgb(113, 35, 35);
+    background-color: rgb(139, 46, 46);
 }
 
 .label-container{
