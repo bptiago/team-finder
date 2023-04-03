@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Roboto:wght@400;500&family=Sarabun:wght@100;300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/info.css">
+    <link rel="stylesheet" href="./componentes/navbar.css">
+
+    <title>TeamFinder</title>
+</head>
+<body>
+    <div class="header">
+        <a class="header-logo" href="index.html">
+            Team<span class="italic-text">Finder</span>
+        </a>
+        <div class="header-button-container">
+            <a href="login.html"> <button class="header-button"> Entrar </button></a>
+        </div>
+    </div>
+    <div>
+        <h1 class="title-inf">Informações necessárias</h1>
+        <div class="hello-inf">Olá @User!</div>
+    </div>
+    <section class="main-container">
+        <div class="form-container">
+            <form class="form-elements">
+                <label for="main-agent">ESCOLHA SEU MAIN</label>
+                <input type="text" id="main-agent" placeholder="Aqui deve ser um RollDown">
+                <label for="rank">QUAL O SEU RANK ATUAL?</label>
+                <input type="text" id="rank" placeholder="Aqui deve ser um RollDown">
+                <label for="language">ESCOLHA O SEU IDIOMA</label>
+                <input type="text" id="language" placeholder="Aqui deve ser um RollDown">
+                <label for="time">DISPONIBILIDADE</label>
+                <input type="text" id="time" placeholder="Aqui deve ser um RollDown">
+                <label for="sobre-mim">SOBRE MIM</label>
+                <input type="text" id="sobre-mim" placeholder="Digite Aqui">
+                <div class="button-container">
+                    <button>SALVAR</button>
+                </div>
+            </form>
+        </div>
+        <div class="preview-container">
+           <div class="preview-title">Prévia</div>
+        </div>
+    </section>
+</body>
+</html>

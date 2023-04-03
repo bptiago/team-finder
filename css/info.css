@@ -1,56 +1,57 @@
+* {
+    margin: 0
+}
+
 body {
     margin: 0;
-    background-image: url(../images/background-cadastro.png);
-    background-size: 110%;
-    background-position-y: 25px;
+    background-image: url(../images/background-profile-info.jpg);
+    background-size: cover;
 
 }
 
-.container-cadastro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 40%;
-    margin-top: 30px;
-}
-
-.cadastro-title {
+.title-inf, .hello-inf {
     font-family: Sarabun;
-    font-weight: 700;
-    font-size: 40px;
+    font-weight: bold;
+}
+
+.title-inf {
+    font-size: 75px;
+    color: white;
+}
+
+.hello-inf {
+    font-size: 55px;
     color: rgb(255, 87, 87);
 }
 
+.main-container {
+    display: flex;
+}
+
 .form-container {
-    margin-top: 5px;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 30px 60px;
-    margin-left: 20px;
+    padding: 10px 10px;
     border: solid;
-    border-width: 12px;
-    border-radius: 50px;
-    border-color: rgba(255, 87, 87, 0.7);
+    border-color: rgb(240, 74, 74);
+    background-color: rgba(27, 30, 34, 0.6);
 }
 
 .form-elements {
     display: flex;
     flex-direction: column;
-    width: 420px;
+    width: 500px;
 }
 
 .form-elements label {
-    font-size: 30px;
     font-family: IBM Plex Mono;
     font-weight: 500;
+    font-size: 30px;
     color: white;
 }
 
 .form-elements input {
-    padding: 9px;
+    padding: 6px;
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: gray;
 
     border: none;
@@ -64,13 +65,13 @@ body {
     margin-top: 20px;
 }
 
-.form-button {
+.button-container button {
     font-family: Roboto;
     font-weight: bold;
     font-size: 22px;
     color: white;
     
-    padding: 15px;
+    padding: 10px 26px;
     background-color: rgb(255, 87, 87);
     border-radius: 50px;
     border: 0;
@@ -78,11 +79,18 @@ body {
     cursor: pointer;
 }
 
-.form-button:hover {
+.button-container button:hover {
     background-color: rgb(207, 72, 72);
     transition: background-color 0.10s;
 }
 
-.form-button:active {
+.button-container button:active {
     background-color: rgb(139, 46, 46);
+}
+
+.preview-title {
+    color: white;
+    font-family: Sarabun;
+    font-size: 50px;
+    font-weight: 700;
 }
