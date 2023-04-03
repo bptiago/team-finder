@@ -1,4 +1,7 @@
 # team-finder
+
+Aviso: para rodar o video na profile, temos que baixar ele novamente e colocar na pasta porque o github não aceita arquivos maiores que 100MB
+
 Pontos para arrumar:
 1) ~Senha deve ficar escondida (em formato ****)~
 2) Adicionar algumas tags @media para definir um tamanho mínimo para o documento

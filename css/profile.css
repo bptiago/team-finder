@@ -1,3 +1,6 @@
+html { overflow-y: scroll; overflow-x:hidden; }
+
+
 .container {
     display: flex;
     justify-content: center;
@@ -5,23 +8,31 @@
 
 .perfil-background {
     width: 800px;
-    background: rgba(139,139,139,0.8);
+    background: rgba(0,0,0,0.6);
     height: 100%;
-    position: fixed;
     justify-content: center;
     align-items: center;
     mso-border-shadow: yes;
 }
-
+.video-background{
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+}
 
 body {
-    background-image: url(../images/background-perfil.png);
+    background-image: url(../images/jett.png);
     align-items: center;
-    background-position: center;
+    background-position: initial;
+
     background-size: cover;
-    background-attachment: fixed;
+
+    background-repeat: no-repeat;
     height: 100%;
     padding: 0;
+
 
 }
 
@@ -66,4 +77,10 @@ body {
     color: white;
     font-family: "IBM Plex Mono";
     font-size: 40px;
+}
+
+.perfil-sub-info{
+    color: white;
+    font-family: "IBM Plex Mono";
+    font-size: 12px;
 }
