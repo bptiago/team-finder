@@ -1,0 +1,23 @@
+.footer-background {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-width: 100%;
+    height: 100px;
+    position: relative;
+
+}
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.footer-text{
+    color: white;
+    font-family: "IBM Plex Mono";
+    text-decoration: none;
+    font-size: 20px;
+}
