@@ -38,8 +38,8 @@
     <label for="classe">
         <h1>Classe do jogador:</h1>
     </label>
-    <select id="classe" name="Classe" onchange="atualizarDrop()" onchange="atualizarclasse()">
-        <option value="">Selecione uma opção: </option>
+    <select id="classe" name="Classe" onchange="atualizarDrop(), atualizarclasse()">
+        <option value="">Selecione uma opção: </option> 
         <option value="iniciador">Iniciador</option>
         <option value="controlador">Controlador</option>
         <option value="sentinela">Sentinela</option>
@@ -114,6 +114,9 @@
 
             var seletor = document.getElementById("classe");
             var valor = seletor.value;
+
+            document.getElementById("iniciador").style.display = "block";
+
             if (valor == "") {
                 document.getElementById("iniciador").style.display = "block";
                 document.getElementById("controlador").style.display = "none";
