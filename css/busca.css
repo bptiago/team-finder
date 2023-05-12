@@ -1,0 +1,80 @@
+.content-busca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-content{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+.container-image{
+    align-items: center;
+    justify-content: center;
+}
+
+.container-layout img{
+    align-self: center;
+}
+
+button{
+    justify-content: center;
+    color: white;
+    background-color: black;
+    border: 3px solid;
+    border-radius: 25px;
+    border-color: rgba(255, 87, 87);
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.container-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container-layout{
+    justify-content: center;
+    display: grid;
+    background-color: black;
+    border: 5px solid;
+    border-color: rgba(255, 87, 87);
+    margin: 10px;
+    border-radius: 25px;
+    width: 250px;
+    height: 430px;
+}
+
+body{
+    align-items: center;
+        background-color: #822F3A;
+        height: 100%;
+        padding: 0;
+    display: grid;
+}
+h1 {
+    text-align: center;
+    font-family: IBM Plex Mono;
+    color: white;
+    font-size: 20px;
+}
+
+p {
+    color: lightcoral;
+    font-size: 40px;
+}
+select{
+    background:none;
+    border: none;
+    color: white;
+}
+
+select option{
+    color: white;
+    background-color: black;
+}

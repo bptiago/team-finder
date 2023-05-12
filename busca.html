@@ -3,296 +3,152 @@
 
 <head>
     <meta charset="UTF-8">
-    <style>
-        body {
-            background-color: #666699;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        h1 {
-            color: coral;
-            font-size: 20px;
-        }
-
-        p {
-            color: lightcoral;
-            font-size: 40px;
-        }
-    </style>
+    <script src="./JS/busca.js"></script>
+    <link rel="stylesheet" href="./componentes/navbar.css">
+    <link rel="stylesheet" href="./componentes/footer.css">
+    <link rel="stylesheet" href="./css/busca.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Roboto:wght@400;500&family=Sarabun:wght@100;300&display=swap"
+        rel="stylesheet">
     <title>Página de busca</title>
 </head>
 
 <body>
+
     <div class="header">
-        <h1>Team<b>Finder</b></h1>
+        <a class="header-logo" href="index.html">
+            Team<span class="italic-text">Finder</span>
+        </a>
         <div class="header-button-container">
-            <button class="header-button">Entrar</button>
-            <button class="header-button">Criar conta</button>
+            <a href="cadastro.html"><button class="header-button">Criar conta</button></a>
         </div>
     </div>
+    <!-- começo código-->
     <p>
         Qual é o perfil do jogador que você está procurando?
     </p>
     </n>
-    <label for="classe">
-        <h1>Classe do jogador:</h1>
-    </label>
-    <select id="classe" name="Classe" onchange="atualizarDrop(), atualizarclasse()">
-        <option value="">Selecione uma opção: </option> 
-        <option value="iniciador">Iniciador</option>
-        <option value="controlador">Controlador</option>
-        <option value="sentinela">Sentinela</option>
-        <option value="duelista">Duelista</option>
-    </select>
-    <br>
-    <img id="imagemclasse" src="./images/controlador.png" alt="imagem controlador">
+    <div class="content-busca">
+        <div class="container-layout">
+            <div class="container-content">
+                <label for="classe">
+                    <h1>Classe do<br>jogador:</h1>
+                </label>
+                <select id="classe" name="Classe" onchange="atualizarDrop(), atualizarclasse()">
+                    <option value="">Selecione uma opção: </option>
+                    <option value="iniciador">Iniciador</option>
+                    <option value="controlador">Controlador</option>
+                    <option value="sentinela">Sentinela</option>
+                    <option value="duelista">Duelista</option>
+                </select>
+                <select id="iniciador" style="display: none;">
+                    <option value="">Selecione o agente</option>
+                    <option value="soka">Sova</option>
+                    <option value="breach">Breach</option>
+                    <option value="skye">Skye</option>
+                    <option value="kayo">Kay/o</option>
+                    <option value="fade">Fade</option>
+                    <option value="gekko">Gekko</option>
+                </select>
 
-    <script>
+                <select id="controlador" style="display: none;">
+                    <option value="">Selecione o agente</option>
+                    <option value="brimstone">Brimstone</option>
+                    <option value="viper">Viper</option>
+                    <option value="omen">Omen</option>
+                    <option value="astra">Astra</option>
+                    <option value="harbor">Harbor</option>
+                </select>
 
-        function atualizarclasse() {
-            var DClasse = document.getElementById("classe");
-            var imagemClasse = document.getElementById("imagemclasse")
+                <select id="sentinela" style="display: none;">
+                    <option value="">Selecione o agente</option>
+                    <option value="sage">Sage</option>
+                    <option value="cypher">Cypher</option>
+                    <option value="killjoy">Killjoy</option>
+                    <option value="chamber">Chamber</option>
+                </select>
 
-            if (DClasse.value == "iniciador") {
-                imagemClasse.src = "./images/iniciador.png"
-                imagem.alt = "Logo Iniciador"
-            } else if (DClasse.value == "controlador") {
-                imagemClasse.src = "./images/controlador.png"
-                imagem.alt = "Logo controlador"
-            } else if (DClasse.value == "sentinela") {
-                imagemClasse.src = "./images/sentinela.png"
-                imagem.alt = "Logo sentinela"
-            } else if (DClasse.value == "duelista") {
-                imagemClasse.src = "./images/duelista.png"
-                imagem.alt = "Logo duelista"
-            }
-        }
+                <select id="duelista" style="display: none;">
+                    <option value="">Selecione o agente</option>
+                    <option value="phoenix">Phoenix</option>
+                    <option value="reyna">Reyna</option>
+                    <option value="jett">Jett</option>
+                    <option value="raze">Raze</option>
+                    <option value="yoru">Yoru</option>
+                    <option value="neon">Neon</option>
+                </select>
+                <img id="imagemclasse" src="./images/controlador.png" alt="imagem controlador">
 
-    </script>
+            </div>
+        </div>
 
-    <select id="iniciador" style="display: none;">
-        <option value="">Selecione o agente</option>
-        <option value="soka">Sova</option>
-        <option value="breach">Breach</option>
-        <option value="skye">Skye</option>
-        <option value="kayo">Kay/o</option>
-        <option value="fade">Fade</option>
-        <option value="gekko">Gekko</option>
-    </select>
+        <div class="container-layout">
+            <div class="container-content">
+                <label for="rank">
+                    <h1>Rank do<br>jogador:</h1>
+                </label>
+                <select id="rank" name="Rank" onchange="atualizarRank()">
+                    <option value="">Selecione uma opção: </option>
+                    <option value="ferro">Ferro</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="prata">Prata</option>
+                    <option value="ouro">Ouro</option>
+                    <option value="platina">Platina</option>
+                    <option value="diamante">Diamante</option>
+                    <option value="ascendente">Ascendente</option>
+                    <option value="imortal">Imortal</option>
+                    <option value="radiante">Radiante</option>
+                </select>
+                <br>
+                <img id="imagemrank" src="./images/ferro.png" alt="imagem ferro" width="150px">
+            </div>
+        </div>
 
-    <select id="controlador" style="display: none;">
-        <option value="">Selecione o agente</option>
-        <option value="brimstone">Brimstone</option>
-        <option value="viper">Viper</option>
-        <option value="omen">Omen</option>
-        <option value="astra">Astra</option>
-        <option value="harbor">Harbor</option>
-    </select>
-
-    <select id="sentinela" style="display: none;">
-        <option value="">Selecione o agente</option>
-        <option value="sage">Sage</option>
-        <option value="cypher">Cypher</option>
-        <option value="killjoy">Killjoy</option>
-        <option value="chamber">Chamber</option>
-    </select>
-
-    <select id="duelista" style="display: none;">
-        <option value="">Selecione o agente</option>
-        <option value="phoenix">Phoenix</option>
-        <option value="reyna">Reyna</option>
-        <option value="jett">Jett</option>
-        <option value="raze">Raze</option>
-        <option value="yoru">Yoru</option>
-        <option value="neon">Neon</option>
-    </select>
-
-    <script>
-
-        function atualizarDrop() {
-
-            var seletor = document.getElementById("classe");
-            var valor = seletor.value;
-
-            document.getElementById("iniciador").style.display = "block";
-
-            if (valor == "") {
-                document.getElementById("iniciador").style.display = "block";
-                document.getElementById("controlador").style.display = "none";
-                document.getElementById("sentinela").style.display = "none";
-                document.getElementById("duelista").style.display = "none";
-            } else if (valor == "iniciador") {
-                document.getElementById("iniciador").style.display = "block";
-                document.getElementById("controlador").style.display = "none";
-                document.getElementById("sentinela").style.display = "none";
-                document.getElementById("duelista").style.display = "none";
-            } else if (valor == "controlador") {
-                document.getElementById("iniciador").style.display = "none";
-                document.getElementById("controlador").style.display = "block";
-                document.getElementById("sentinela").style.display = "none";
-                document.getElementById("duelista").style.display = "none";
-            } else if (valor == "sentinela") {
-                document.getElementById("iniciador").style.display = "none";
-                document.getElementById("controlador").style.display = "none";
-                document.getElementById("sentinela").style.display = "block";
-                document.getElementById("duelista").style.display = "none";
-            } else if (valor == "duelista") {
-                document.getElementById("iniciador").style.display = "none";
-                document.getElementById("controlador").style.display = "none";
-                document.getElementById("sentinela").style.display = "none";
-                document.getElementById("duelista").style.display = "block";
-            } else {
-                document.getElementById("iniciador").style.display = "block";
-                document.getElementById("controlador").style.display = "none";
-                document.getElementById("sentinela").style.display = "none";
-                document.getElementById("duelista").style.display = "none";
-            }
-        }
-
-    </script>
-
-    <label for="classe">
-        <h1>Rank do jogador</h1>
-    </label>
-    <select id="rank" name="Rank" onchange="atualizarRank()">
-        <option value="">Selecione uma opção: </option>
-        <option value="ferro">Ferro</option>
-        <option value="bronze">Bronze</option>
-        <option value="prata">Prata</option>
-        <option value="ouro">Ouro</option>
-        <option value="platina">Platina</option>
-        <option value="diamante">Diamante</option>
-        <option value="ascendente">Ascendente</option>
-        <option value="imortal">Imortal</option>
-        <option value="radiante">Radiante</option>
-    </select>
-    <br>
-    <img id="imagemrank" src="./images/ferro.png" alt="imagem ferro">
-
-    <script>
-
-        function atualizarRank() {
-            var RClasse = document.getElementById("rank");
-            var imagemRank = document.getElementById("imagemrank")
-
-            if (RClasse.value == "ferro") {
-                imagemRank.src = "./images/ferro.png"
-                imagem.alt = "Logo ferro"
-            } else if (RClasse.value == "bronze") {
-                imagemRank.src = "./images/bronze.png"
-                imagem.alt = "Logo bronze"
-            } else if (RClasse.value == "prata") {
-                imagemRank.src = "./images/prata.png"
-                imagem.alt = "Logo prata"
-            } else if (RClasse.value == "ouro") {
-                imagemRank.src = "./images/ouro.png"
-                imagem.alt = "Logo ouro"
-            } else if (RClasse.value == "platina") {
-                imagemRank.src = "./images/platina.png"
-                imagem.alt = "Logo platina"
-            } else if (RClasse.value == "diamante") {
-                imagemRank.src = "./images/diamante.png"
-                imagem.alt = "Logo diamante"
-            } else if (RClasse.value == "ascendente") {
-                imagemRank.src = "./images/ascendente.png"
-                imagem.alt = "Logo ascendente"
-            } else if (RClasse.value == "imortal") {
-                imagemRank.src = "./images/imortal.png"
-                imagem.alt = "Logo imortal"
-            } else if (RClasse.value == "radiante") {
-                imagemRank.src = "./images/radiante.png"
-                imagem.alt = "Logo radiante"
-            }
-        }
-
-    </script>
-
-    <label for="lingua">
-        <h1>Língua do jogador</h1>
-        <select id="lingua" name="lingua" onchange="atualizarLingua()">
-            <option value="">Selecione uma opção</option>
-            <option value="portugues">Português</option>
-            <option value="ingles">Inglês</option>
-            <option value="espanhol">Espanhol</option>
-            <option value="russo">Russo</option>
-            <option value="alemao">Alemão</option>
-        </select>
-        <br>
-        <br>
-        <img id="imagemlingua" src="./images/banbra.png" alt="imagemlingua">
-
-        <script>
-
-            function atualizarLingua() {
-                var LClasse = document.getElementById("lingua");
-                var imagemlingua = document.getElementById("imagemlingua")
-
-                if (LClasse.value == "portugues") {
-                    imagemlingua.src = "./images/banbra.png"
-                    imagem.alt = "bandsseira Brasil"
-                } else if (LClasse.value == "ingles") {
-                    imagemlingua.src = "./images/baneua.png"
-                    imagem.alt = "bandeira EUA"
-                } else if (LClasse.value == "espanhol") {
-                    imagemlingua.src = "./images/banesp.png"
-                    imagem.alt = "bandeira espanhola"
-                } else if (LClasse.value == "russo") {
-                    imagemlingua.src = "./images/banrus.png"
-                    imagem.alt = "bandeira USSR"
-                } else if (LClasse.value == "alemao") {
-                    imagemlingua.src = "./images/banger.png"
-                    imagem.alt = "bandeira alema"
-                }
-            }
-        </script>
-
-    </label>
-
-    <label for="lingua">
-        <h1>Dias da semana disponíveis</h1>
-        <select id="dias" name="dias" onchange="atualizarDias()">
-            <option value="">Selecione uma opção</option>
-            <option value="segunda">Segunda</option>
-            <option value="terca">Terça</option>
-            <option value="quarta">Quarta</option>
-            <option value="quinta">Quinta</option>
-            <option value="sexta">Sexta</option>
-            <option value="sabado">Sábado</option>
-        </select>
-        <br>
-        <img id="imagemdia" src="./images/seg.png" alt="imagemdia">
-
-        <script>
-
-            function atualizarDias() {
-                var HClasse = document.getElementById("dias");
-                var imagemClasse = document.getElementById("imagemdia")
-
-                if (HClasse.value == "segunda") {
-                    imagemClasse.src = "./images/seg.png"
-                    imagem.alt = "segunda"
-                } else if (HClasse.value == "terca") {
-                    imagemClasse.src = "./images/ter.png"
-                    imagem.alt = "terça"
-                } else if (HClasse.value == "quarta") {
-                    imagemClasse.src = "./images/qua.png"
-                    imagem.alt = "Quarta"
-                } else if (HClasse.value == "quinta") {
-                    imagemClasse.src = "./images/qui.png"
-                    imagem.alt = "quinta"
-                } else if (HClasse.value == "sexta") {
-                    imagemClasse.src = "./images/sex.png"
-                    imagem.alt = "sexta"
-                } else if (HClasse.value == "sabado") {
-                    imagemClasse.src = "./images/sab.png"
-                    imagem.alt = "sábado"
-                }
-            }
-
-        </script>
-
-    </label>
+        <div class="container-layout">
+            <div class="container-content">
+                <label for="lingua">
+                    <h1>Língua do<br>jogador</h1>
+                </label>
+                <select id="lingua" name="lingua" onchange="atualizarLingua()">
+                    <option value="">Selecione uma opção</option>
+                    <option value="portugues">Português</option>
+                    <option value="ingles">Inglês</option>
+                    <option value="espanhol">Espanhol</option>
+                    <option value="russo">Russo</option>
+                    <option value="alemao">Alemão</option>
+                </select>
+                <br>
+                <img id="imagemlingua" src="./images/banbra.png" alt="imagemlingua">
+            </div>
+        </div>
+        <div class="container-layout">
+            <div class="container-content">
+                <label for="dias">
+                    <h1>Dias da semana<br>disponíveis</h1>
+                </label>
+                <select id="dias" name="dias" onchange="atualizarDias()">
+                    <option value="">Selecione uma opção</option>
+                    <option value="segunda">Segunda</option>
+                    <option value="terca">Terça</option>
+                    <option value="quarta">Quarta</option>
+                    <option value="quinta">Quinta</option>
+                    <option value="sexta">Sexta</option>
+                    <option value="sabado">Sábado</option>
+                </select>
+                <br>
+                <img id="imagemdia" src="./images/seg.png" alt="imagemdia" width="50px">
+            </div>
+        </div>
+    
+    </div>
+<div class="container-button">    
+    <button>SUBMIT</button>
+</div>        
 </body>
+<footer class="footer-background">
+    <div class="footer-content">
+        <div class="footer-text"><span style="color: rgb(255, 87, 87)">Team</span><i>Finder</i> © 2023</div>
+    </div>
+</footer>
 
 </html>
