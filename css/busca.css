@@ -6,6 +6,7 @@
 
 .container-content {
     justify-content: center;
+    justify-items: center;
     align-items: center;
     display: grid;
 }
@@ -23,7 +24,9 @@
     width: 170px;
     height: 100px;
     justify-content: center;
+    justify-items: center;
     align-items: center;
+    display: grid;
     margin: 0px;
     margin-top: 30px;
 }
@@ -37,6 +40,9 @@
 .container-drop{
     width: 10px;
     height: 20px;
+    justify-items: center;
+    display: grid;
+    justify-content: center;
 }
 
 button {
@@ -89,7 +95,7 @@ h1 {
     text-align: center;
     font-family: IBM Plex Mono;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 p {

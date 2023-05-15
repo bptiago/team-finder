@@ -96,7 +96,7 @@ function atualizarclasse() {
         imagemClasse.src = "./images/controlador.png"
         imagem.alt = "Logo controlador"
     } else if (DClasse.value == "controlador" && con.value == "brimstone") {
-        imagemClasse.src = "./images/brinstone-icon.png"
+        imagemClasse.src = "./images/brimstone-icon.png"
         imagem.alt = "Brimstone icon"
     } else if (DClasse.value == "controlador" && con.value == "viper") {
         imagemClasse.src = "./images/viper-icon.png"
@@ -200,7 +200,7 @@ function atualizarLingua() {
         imagemlingua.src = "./images/banesp.png"
         imagem.alt = "bandeira espanhola"
     } else if (LClasse.value == "russo") {
-        imagemlingua.src = "./images/banrus.png"
+        imagemlingua.src = "./images/banurs.png"
         imagem.alt = "bandeira Rússia"
     } else if (LClasse.value == "alemao") {
         imagemlingua.src = "./images/banger.png"
