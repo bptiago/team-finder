@@ -9,6 +9,7 @@
     justify-items: center;
     align-items: center;
     display: grid;
+    width: 230px;
 }
 
 .container-image {
@@ -21,14 +22,12 @@
 }
 
 .container-titulo {
-    width: 170px;
+    width: 210px;
     height: 100px;
     justify-content: center;
     justify-items: center;
     align-items: center;
     display: grid;
-    margin: 0px;
-    margin-top: 30px;
 }
 
 .container-drop-agente{
@@ -40,6 +39,7 @@
 .container-drop{
     width: 10px;
     height: 20px;
+    margin-top: 5px;
     justify-items: center;
     display: grid;
     justify-content: center;
@@ -95,7 +95,7 @@ h1 {
     text-align: center;
     font-family: IBM Plex Mono;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 p {

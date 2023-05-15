@@ -200,7 +200,7 @@ function atualizarLingua() {
         imagemlingua.src = "./images/banesp.png"
         imagem.alt = "bandeira espanhola"
     } else if (LClasse.value == "russo") {
-        imagemlingua.src = "./images/banurs.png"
+        imagemlingua.src = "./images/banrus.png"
         imagem.alt = "bandeira Rússia"
     } else if (LClasse.value == "alemao") {
         imagemlingua.src = "./images/banger.png"
