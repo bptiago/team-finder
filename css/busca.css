@@ -1,25 +1,45 @@
-.content-busca{
+.content-busca {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container-content{
+.container-content {
     justify-content: center;
     align-items: center;
     display: grid;
 }
 
-.container-image{
+.container-image {
     align-items: center;
     justify-content: center;
 }
 
-.container-layout img{
+.container-layout img {
     align-self: center;
 }
 
-button{
+.container-titulo {
+    width: 170px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    margin-top: 30px;
+}
+
+.container-drop-agente{
+    width: 157px;
+    height: 17px;
+    margin-top: 10px;
+}
+
+.container-drop{
+    width: 10px;
+    height: 20px;
+}
+
+button {
     justify-content: center;
     color: white;
     background-color: black;
@@ -31,14 +51,14 @@ button{
     font-size: 18px;
 }
 
-.container-button{
+.container-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.container-layout{
+.container-layout {
     justify-content: center;
     display: grid;
     background-color: black;
@@ -50,13 +70,21 @@ button{
     height: 430px;
 }
 
-body{
+.container-divimage{
+    width: 200px;
+    height: 230px;
+    display: grid;
+    justify-content: center;
+}
+
+body {
     align-items: center;
-        background-color: #822F3A;
-        height: 100%;
-        padding: 0;
+    background-color: #822F3A;
+    height: 100%;
+    padding: 0;
     display: grid;
 }
+
 h1 {
     text-align: center;
     font-family: IBM Plex Mono;
@@ -68,13 +96,14 @@ p {
     color: lightcoral;
     font-size: 40px;
 }
-select{
-    background:none;
+
+select {
+    background: none;
     border: none;
     color: white;
 }
 
-select option{
+select option {
     color: white;
     background-color: black;
 }

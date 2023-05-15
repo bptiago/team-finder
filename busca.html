@@ -31,112 +31,130 @@
     <div class="content-busca">
         <div class="container-layout">
             <div class="container-content">
-                <label for="classe">
+                <div for="classe" class="container-titulo">
                     <h1>Classe do<br>jogador:</h1>
-                </label>
-                <select id="classe" name="Classe" onchange="atualizarDrop(), atualizarclasse()">
-                    <option value="">Selecione uma opção: </option>
-                    <option value="iniciador">Iniciador</option>
-                    <option value="controlador">Controlador</option>
-                    <option value="sentinela">Sentinela</option>
-                    <option value="duelista">Duelista</option>
-                </select>
-                <select id="iniciador" style="display: none;">
-                    <option value="">Selecione o agente</option>
-                    <option value="soka">Sova</option>
-                    <option value="breach">Breach</option>
-                    <option value="skye">Skye</option>
-                    <option value="kayo">Kay/o</option>
-                    <option value="fade">Fade</option>
-                    <option value="gekko">Gekko</option>
-                </select>
+                </div>
+                <div class="container-drop">
+                    <select id="classe" name="Classe" onchange="atualizarDrop(), atualizarclasse()">
+                        <option value="">Selecione uma opção: </option>
+                        <option value="iniciador">Iniciador</option>
+                        <option value="controlador">Controlador</option>
+                        <option value="sentinela">Sentinela</option>
+                        <option value="duelista">Duelista</option>
+                    </select>
+                    <div class="container-drop-agente">
+                        <select id="iniciador" onchange = "atualizarclasse()" style="display: none;width: 1000px">
+                            <option value="">Selecione o iniciador:</option>
+                            <option value="sova">Sova</option>
+                            <option value="breach">Breach</option>
+                            <option value="skye">Skye</option>
+                            <option value="kayo">Kay/o</option>
+                            <option value="fade">Fade</option>
+                            <option value="gekko">Gekko</option>
+                        </select>
 
-                <select id="controlador" style="display: none;">
-                    <option value="">Selecione o agente</option>
-                    <option value="brimstone">Brimstone</option>
-                    <option value="viper">Viper</option>
-                    <option value="omen">Omen</option>
-                    <option value="astra">Astra</option>
-                    <option value="harbor">Harbor</option>
-                </select>
+                        <select id="controlador" onchange = "atualizarclasse()" style="display: none;width: 1000px">
+                            <option value="">Selecione o controlador:</option>
+                            <option value="brimstone">Brimstone</option>
+                            <option value="viper">Viper</option>
+                            <option value="omen">Omen</option>
+                            <option value="astra">Astra</option>
+                            <option value="harbor">Harbor</option>
+                        </select>
 
-                <select id="sentinela" style="display: none;">
-                    <option value="">Selecione o agente</option>
-                    <option value="sage">Sage</option>
-                    <option value="cypher">Cypher</option>
-                    <option value="killjoy">Killjoy</option>
-                    <option value="chamber">Chamber</option>
-                </select>
+                        <select id="sentinela" onchange = "atualizarclasse()" style="display: none; width: 1000px">
+                            <option value="">Selecione o sentinela:</option>
+                            <option value="sage">Sage</option>
+                            <option value="cypher">Cypher</option>
+                            <option value="killjoy">Killjoy</option>
+                            <option value="chamber">Chamber</option>
+                        </select>
 
-                <select id="duelista" style="display: none;">
-                    <option value="">Selecione o agente</option>
-                    <option value="phoenix">Phoenix</option>
-                    <option value="reyna">Reyna</option>
-                    <option value="jett">Jett</option>
-                    <option value="raze">Raze</option>
-                    <option value="yoru">Yoru</option>
-                    <option value="neon">Neon</option>
-                </select>
-                <img id="imagemclasse" src="./images/controlador.png" alt="imagem controlador">
-
+                        <select id="duelista" onchange = "atualizarclasse()" style="display: none;width: 1000px">
+                            <option value="">Selecione o duelista:</option>
+                            <option value="phoenix">Phoenix</option>
+                            <option value="reyna">Reyna</option>
+                            <option value="jett">Jett</option>
+                            <option value="raze">Raze</option>
+                            <option value="yoru">Yoru</option>
+                            <option value="neon">Neon</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="container-divimage">
+                    <img id="imagemclasse" src="./images/valorant-logo.png" alt="logo controlador" width="150px">
+                </div>
             </div>
         </div>
 
         <div class="container-layout">
-            <div class="container-content">
-                <label for="rank">
+            <div class="container-content" >
+                <div for="rank" class="container-titulo">
                     <h1>Rank do<br>jogador:</h1>
-                </label>
-                <select id="rank" name="Rank" onchange="atualizarRank()">
-                    <option value="">Selecione uma opção: </option>
-                    <option value="ferro">Ferro</option>
-                    <option value="bronze">Bronze</option>
-                    <option value="prata">Prata</option>
-                    <option value="ouro">Ouro</option>
-                    <option value="platina">Platina</option>
-                    <option value="diamante">Diamante</option>
-                    <option value="ascendente">Ascendente</option>
-                    <option value="imortal">Imortal</option>
-                    <option value="radiante">Radiante</option>
-                </select>
+                </div>
+                <div class="container-drop">
+                    <select id="rank" name="Rank" onchange="atualizarRank()">
+                        <option value="">Selecione uma opção: </option>
+                        <option value="ferro">Ferro</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="prata">Prata</option>
+                        <option value="ouro">Ouro</option>
+                        <option value="platina">Platina</option>
+                        <option value="diamante">Diamante</option>
+                        <option value="ascendente">Ascendente</option>
+                        <option value="imortal">Imortal</option>
+                        <option value="radiante">Radiante</option>
+                    </select>
+                </div>
                 <br>
-                <img id="imagemrank" src="./images/ferro.png" alt="imagem ferro" width="150px">
+                <div class="container-divimage">    
+                    <img id="imagemrank" src="./images/valorant-logo.png" alt="imagem ferro" width="150px">
+                </div>
             </div>
         </div>
 
         <div class="container-layout">
             <div class="container-content">
-                <label for="lingua">
+                <div for="lingua" class="container-titulo">
                     <h1>Língua do<br>jogador</h1>
-                </label>
-                <select id="lingua" name="lingua" onchange="atualizarLingua()">
-                    <option value="">Selecione uma opção</option>
-                    <option value="portugues">Português</option>
-                    <option value="ingles">Inglês</option>
-                    <option value="espanhol">Espanhol</option>
-                    <option value="russo">Russo</option>
-                    <option value="alemao">Alemão</option>
-                </select>
+                </div>
+                <div class="container-drop">
+                    <select id="lingua" name="lingua" onchange="atualizarLingua()">
+                        <option value="">Selecione uma opção</option>
+                        <option value="portugues">Português</option>
+                        <option value="ingles">Inglês</option>
+                        <option value="espanhol">Espanhol</option>
+                        <option value="russo">Russo</option>
+                        <option value="alemao">Alemão</option>
+                    </select>
+                </div>
                 <br>
-                <img id="imagemlingua" src="./images/banbra.png" alt="imagemlingua">
+                <div class="container-divimage">
+                    <img id="imagemlingua" src="./images/valorant-logo.png" alt="imagemlingua" width="150px">
+                </div>
             </div>
         </div>
         <div class="container-layout">
             <div class="container-content">
-                <label for="dias">
+                <div for="dias" class="container-titulo">
                     <h1>Dias da semana<br>disponíveis</h1>
-                </label>
-                <select id="dias" name="dias" onchange="atualizarDias()">
-                    <option value="">Selecione uma opção</option>
-                    <option value="segunda">Segunda</option>
-                    <option value="terca">Terça</option>
-                    <option value="quarta">Quarta</option>
-                    <option value="quinta">Quinta</option>
-                    <option value="sexta">Sexta</option>
-                    <option value="sabado">Sábado</option>
-                </select>
+                </div>
+                <div class="container-drop">
+                    <select id="dias" name="dias" onchange="atualizarDias()">
+                        <option value="">Selecione uma opção</option>
+                        <option value="segunda">Segunda</option>
+                        <option value="terca">Terça</option>
+                        <option value="quarta">Quarta</option>
+                        <option value="quinta">Quinta</option>
+                        <option value="sexta">Sexta</option>
+                        <option value="sabado">Sábado</option>
+                    </select>
+                </div>
                 <br>
-                <img id="imagemdia" src="./images/seg.png" alt="imagemdia" width="50px">
+                <div class="container-divimage">
+                    <img id="imagemdia" src="./images/valorant-logo.png" alt="imagemdia" width="150px">
+                </div>
             </div>
         </div>
     
