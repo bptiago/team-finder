@@ -9,14 +9,9 @@ body {
 
 }
 
-.title-inf, .hello-inf {
+.hello-text, .hello-inf {
     font-family: Sarabun;
     font-weight: bold;
-}
-
-.title-inf {
-    font-size: 75px;
-    color: white;
 }
 
 .hello-inf {
@@ -24,45 +19,52 @@ body {
     color: rgb(255, 87, 87);
 }
 
-.main-container {
-    display: flex;
+.hello-text {
+    font-size: 2rem;
+    color: white;
 }
 
-.form-container {
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.main-container {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.card-container {
     padding: 10px 10px;
     border: solid;
     border-color: rgb(240, 74, 74);
     background-color: rgba(27, 30, 34, 0.6);
+    width: 15rem;
 }
 
-.form-elements {
-    display: flex;
-    flex-direction: column;
-    width: 500px;
+.card-content {
+    display: grid;
+    justify-items: center;
+    row-gap: 2rem;
 }
 
-.form-elements label {
-    font-family: IBM Plex Mono;
-    font-weight: 500;
-    font-size: 30px;
+.card-label {
     color: white;
+    font-family: "IBM Plex Mono";
+    text-align: center;
 }
 
-.form-elements input {
-    padding: 6px;
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: gray;
-
-    border: none;
-    border-radius: 20px;
-    background-color: white;
+.card-img-container {
+    margin: 3rem auto;
 }
 
 .button-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 .button-container button {
@@ -86,11 +88,4 @@ body {
 
 .button-container button:active {
     background-color: rgb(139, 46, 46);
-}
-
-.preview-title {
-    color: white;
-    font-family: Sarabun;
-    font-size: 50px;
-    font-weight: 700;
 }
