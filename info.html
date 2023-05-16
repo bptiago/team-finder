@@ -15,6 +15,7 @@
     <title>TeamFinder</title>
 </head>
 <body>
+
     <div class="header">
         <a class="header-logo" href="index.html">
             Team<span class="italic-text">Finder</span>
@@ -23,31 +24,44 @@
             <a href="login.html"> <button class="header-button"> Entrar </button></a>
         </div>
     </div>
-    <div>
-        <h1 class="title-inf">Informações necessárias</h1>
+    
+    <div class="title-container">
         <div class="hello-inf">Olá @User!</div>
+        <div class="hello-text">Seu cadastro está quase finalizado...</div>
+        <div class="hello-text">Por favor preencha estas informações.</div>
     </div>
+    
     <section class="main-container">
-        <div class="form-container">
-            <form class="form-elements">
-                <label for="main-agent">ESCOLHA SEU MAIN</label>
-                <input type="text" id="main-agent" placeholder="Aqui deve ser um RollDown">
-                <label for="rank">QUAL O SEU RANK ATUAL?</label>
-                <input type="text" id="rank" placeholder="Aqui deve ser um RollDown">
-                <label for="language">ESCOLHA O SEU IDIOMA</label>
-                <input type="text" id="language" placeholder="Aqui deve ser um RollDown">
-                <label for="time">DISPONIBILIDADE</label>
-                <input type="text" id="time" placeholder="Aqui deve ser um RollDown">
-                <label for="sobre-mim">SOBRE MIM</label>
-                <input type="text" id="sobre-mim" placeholder="Digite Aqui">
-                <div class="button-container">
-                    <button>SALVAR</button>
+        <div class="card-container">
+            <div class="card-content">
+                <h1 class="card-label">Escolha o seu main</h1>
+                <div>
+                    <select id="main-agent" name="Main">
+                        <option value>Selecione uma opção:</option>
+                        <option value="breach">Breach</option>
+                        <option value="brimstone">Brimstone</option>
+                        <option value="cypher">Cypher</option>
+                        <option value="jett">Jett</option>
+                        <option value="killjoy">Killjoy</option>
+                        <option value="omen">Omen</option>
+                        <option value="phoenix">Phoenix</option>
+                        <option value="raze">Raze</option>
+                        <option value="reyna">Reyna</option>
+                        <option value="sage">Sage</option>
+                        <option value="skye">Skye</option>
+                        <option value="sova">Sova</option>
+                        <option value="viper">Viper</option>
+                    </select>
                 </div>
-            </form>
-        </div>
-        <div class="preview-container">
-           <div class="preview-title">Prévia</div>
+                <div class="card-img-container">
+                    <img src="images/valorant-logo.png" width="150px">
+                </div>
+            </div>
         </div>
     </section>
+
+    <div class="button-container">
+        <button>SALVAR</button>
+    </div>
 </body>
 </html>
