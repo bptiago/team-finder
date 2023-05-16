@@ -5,7 +5,9 @@
 body {
     margin: 0;
     background-image: url(../images/background-profile-info.jpg);
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
@@ -35,19 +37,23 @@ body {
     display: flex;
     margin-top: 2rem;
     justify-content: center;
+    gap: 1.5rem;
 }
 
 .card-container {
     padding: 10px 10px;
     border: solid;
+    border-width: 5px;
     border-color: rgb(240, 74, 74);
-    background-color: rgba(27, 30, 34, 0.6);
+    border-radius: 1rem;
+    background-color: black;
     width: 15rem;
 }
 
 .card-content {
     display: grid;
     justify-items: center;
+    margin-top: 1rem;
     row-gap: 2rem;
 }
 
@@ -55,6 +61,19 @@ body {
     color: white;
     font-family: "IBM Plex Mono";
     text-align: center;
+}
+
+.rolldown {
+    font-family: "Sarabun";
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.rolldown option {
+    background-color: black;
+    color: white;
 }
 
 .card-img-container {
@@ -70,7 +89,7 @@ body {
 .button-container button {
     font-family: Roboto;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.5rem;
     color: white;
     
     padding: 10px 26px;

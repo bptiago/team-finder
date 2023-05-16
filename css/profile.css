@@ -84,3 +84,11 @@ body {
     font-family: "IBM Plex Mono";
     font-size: 12px;
 }
+
+.fixed-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 60px;
+}

@@ -11,11 +11,11 @@
     
     <link rel="stylesheet" href="./css/info.css">
     <link rel="stylesheet" href="./componentes/navbar.css">
+    <link rel="stylesheet" href="./componentes/footer.css">
 
     <title>TeamFinder</title>
 </head>
 <body>
-
     <div class="header">
         <a class="header-logo" href="index.html">
             Team<span class="italic-text">Finder</span>
@@ -23,20 +23,18 @@
         <div class="header-button-container">
             <a href="login.html"> <button class="header-button"> Entrar </button></a>
         </div>
-    </div>
-    
+    </div>  
     <div class="title-container">
         <div class="hello-inf">Olá @User!</div>
         <div class="hello-text">Seu cadastro está quase finalizado...</div>
         <div class="hello-text">Por favor preencha estas informações.</div>
     </div>
-    
     <section class="main-container">
         <div class="card-container">
             <div class="card-content">
                 <h1 class="card-label">Escolha o seu main</h1>
                 <div>
-                    <select id="main-agent" name="Main">
+                    <select class="rolldown main-agent" name="Main">
                         <option value>Selecione uma opção:</option>
                         <option value="breach">Breach</option>
                         <option value="brimstone">Brimstone</option>
@@ -58,10 +56,76 @@
                 </div>
             </div>
         </div>
+        <div class="card-container">
+            <div class="card-content">
+                <h1 class="card-label">Seu ranking atual</h1>
+                <div>
+                    <select class="rolldown main-agent" name="Main">
+                        <option value>Selecione uma opção:</option>
+                        <option value="ferro">Ferro</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="prata">Prata</option>
+                        <option value="ouro">Ouro</option>
+                        <option value="platina">Platina</option>
+                        <option value="diamente">Diamante</option>
+                        <option value="ascendente">Ascendente</option>
+                        <option value="imortal">Imortal</option>
+                        <option value="radiante">Radiante</option>
+                    </select>
+                </div>
+                <div class="card-img-container">
+                    <img src="images/valorant-logo.png" width="150px">
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card-content">
+                <h1 class="card-label">Escolha o seu idioma</h1>
+                <div>
+                    <select class="rolldown main-agent" name="Main">
+                        <option value>Selecione uma opção:</option>
+                        <option value="portugues">Português</option>
+                        <option value="ingles">Inglês</option>
+                        <option value="espanhol">Espanhol</option>
+                        <option value="russo">Russo</option>
+                        <option value="alemao">Alemão</option>
+                    </select>
+                </div>
+                <div class="card-img-container">
+                    <img src="images/valorant-logo.png" width="150px">
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card-content">
+                <h1 class="card-label">Seus dias disponíveis</h1>
+                <div>
+                    <select class="rolldown main-agent" name="Main">
+                        <option value>Selecione uma opção:</option>
+                        <option value="segunda">Segunda</option>
+                        <option value="terca">Terça</option>
+                        <option value="quarta">Quarta</option>
+                        <option value="quinta">Quinta</option>
+                        <option value="sexta">Sexta</option>
+                        <option value="sabado">Sábado</option>
+                        <option value="domingo">Domingo</option>
+                    </select>
+                </div>
+                <div class="card-img-container">
+                    <img src="images/valorant-logo.png" width="150px">
+                </div>
+            </div>
+        </div>
     </section>
 
     <div class="button-container">
-        <button>SALVAR</button>
+        <a href="profile.html"><button>SALVAR</button></a>
     </div>
 </body>
+<footer class="footer-background">
+    <div class="footer-content">
+        <div class="footer-text"><span style="color: rgb(255, 87, 87)">Team</span><i>Finder</i> © 2023</div>
+    </div>
+</footer>
+
 </html>
