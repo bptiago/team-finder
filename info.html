@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    <script src="./JS/info.js"></script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,8 +37,8 @@
             <div class="card-content">
                 <h1 class="card-label">Escolha o seu main</h1>
                 <div>
-                    <select class="rolldown main-agent" name="Main">
-                        <option value>Selecione uma opção:</option>
+                    <select class="rolldown main-agent" name="Main" id="main" onchange="atumain()">
+                        <option value="">Selecione uma opção:</option>
                         <option value="breach">Breach</option>
                         <option value="brimstone">Brimstone</option>
                         <option value="cypher">Cypher</option>
@@ -52,7 +55,7 @@
                     </select>
                 </div>
                 <div class="card-img-container">
-                    <img src="images/valorant-logo.png" width="150px">
+                    <img src="images/valorant-logo.png" width="150px" id="imgmain">
                 </div>
             </div>
         </div>
@@ -60,7 +63,7 @@
             <div class="card-content">
                 <h1 class="card-label">Seu ranking atual</h1>
                 <div>
-                    <select class="rolldown main-agent" name="Main">
+                    <select class="rolldown main-agent" name="Main" id="rank">
                         <option value>Selecione uma opção:</option>
                         <option value="ferro">Ferro</option>
                         <option value="bronze">Bronze</option>
@@ -82,7 +85,7 @@
             <div class="card-content">
                 <h1 class="card-label">Escolha o seu idioma</h1>
                 <div>
-                    <select class="rolldown main-agent" name="Main">
+                    <select class="rolldown main-agent" name="Main" id="lingua">
                         <option value>Selecione uma opção:</option>
                         <option value="portugues">Português</option>
                         <option value="ingles">Inglês</option>
@@ -100,7 +103,7 @@
             <div class="card-content">
                 <h1 class="card-label">Seus dias disponíveis</h1>
                 <div>
-                    <select class="rolldown main-agent" name="Main">
+                    <select class="rolldown main-agent" name="Main" id="dia">
                         <option value>Selecione uma opção:</option>
                         <option value="segunda">Segunda</option>
                         <option value="terca">Terça</option>
@@ -112,7 +115,7 @@
                     </select>
                 </div>
                 <div class="card-img-container">
-                    <img src="images/valorant-logo.png" width="150px">
+                    <img id="imgdia" src="images/valorant-logo.png" width="150px">
                 </div>
             </div>
         </div>

@@ -71,6 +71,9 @@ function atualizarclasse() {
     if (DClasse.value == "") {
         imagemClasse.src = "./images/valorant-logo.png"
         imagem.alt = "Logo Iniciador"
+    }if (DClasse.value == "abacate"){
+        imagemClasse.scr = "./images/R.png"
+        imagem.alt = "abacate"
     } else if (DClasse.value == "iniciador" && ini.value == "") {
         imagemClasse.src = "./images/iniciador.png"
         imagem.alt = "Logo Iniciador"
@@ -200,7 +203,7 @@ function atualizarLingua() {
         imagemlingua.src = "./images/banesp.png"
         imagem.alt = "bandeira espanhola"
     } else if (LClasse.value == "russo") {
-        imagemlingua.src = "./images/banrus.png"
+        imagemlingua.src = "./images/banurs.png"
         imagem.alt = "bandeira Rússia"
     } else if (LClasse.value == "alemao") {
         imagemlingua.src = "./images/banger.png"
