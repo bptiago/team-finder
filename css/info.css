@@ -78,6 +78,11 @@ body {
 
 .card-img-container {
     margin: 3rem auto;
+    width: 150px;
+    height: 150px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 .button-container {
