@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    gap: 170px;
+}
+.form-container{
+        float: right;
+        margin-right: 300px;
+}
+body{
+    background-color: black;
+}
+.form-suport label h3,.form-title h1, .form-title p {
+    color: white;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.form-item {
+    display: flex;
+    align-items: center;
+} 
+.form-item input {
+    margin-left: 20px;  
+    border-radius: 15px;
+}
+.form-item-textarea textarea {
+    display: grid;
+    border-radius: 15px;
+    width: 400px;
+}  
+.form-send {
+    border-radius: 30px;
+    color: black;
+    padding: 20px 40px 20px 40px;
+    font-size: 20px;
+    font-family: IBM Plex Mono ;
+    margin-top: 15px ;
+}
+.form-send:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: solid 2px white;
+}
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+html{
+    position: relative;
+    min-height: 100%;
+}
