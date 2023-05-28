@@ -52,7 +52,7 @@
     justify-content: center;
 }
 
-button {
+.search-submit {
     justify-content: center;
     color: white;
     background-color: black;

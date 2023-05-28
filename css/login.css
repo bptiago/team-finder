@@ -57,9 +57,22 @@ body {
     font-family: Roboto;
 }
 
-.button-container{
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.form-button {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+
     padding: 15px;
     background-color: rgb(255, 87, 87);
     border-radius: 50px;
     border: 0;
+
+    cursor: pointer;
 }

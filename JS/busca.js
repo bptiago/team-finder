@@ -71,9 +71,6 @@ function atualizarclasse() {
     if (DClasse.value == "") {
         imagemClasse.src = "./images/valorant-logo.png"
         imagem.alt = "Logo Iniciador"
-    }if (DClasse.value == "abacate"){
-        imagemClasse.scr = "./images/R.png"
-        imagem.alt = "abacate"
     } else if (DClasse.value == "iniciador" && ini.value == "") {
         imagemClasse.src = "./images/iniciador.png"
         imagem.alt = "Logo Iniciador"
@@ -193,20 +190,21 @@ function atualizarLingua() {
     if (LClasse.value == "") {
         imagemlingua.src = "./images/valorant-logo.png"
         imagem.alt = "Logo Valorant"
-    } else if (LClasse.value == "portugues") {
+    } else if (LClasse.value == "português") {
         imagemlingua.src = "./images/banbra.png"
-        imagem.alt = "bandeira Brasil"
+        imagem.alt = "bandeira brasileira"
     } else if (LClasse.value == "ingles") {
         imagemlingua.src = "./images/baneua.png"
-        imagem.alt = "bandeira EUA"
+        imagem.alt = "bandeira norte-americana"
     } else if (LClasse.value == "espanhol") {
         imagemlingua.src = "./images/banesp.png"
         imagem.alt = "bandeira espanhola"
     } else if (LClasse.value == "russo") {
         imagemlingua.src = "./images/banurs.png"
-        imagem.alt = "bandeira Rússia"
+        imagem.alt = "bandeira russa"
     } else if (LClasse.value == "alemao") {
         imagemlingua.src = "./images/banger.png"
-        imagem.alt = "bandeira alema"
+        imagem.alt = "bandeira alemã"
+        imagemlingua.style.border = "solid 4px white"
     }
 }
