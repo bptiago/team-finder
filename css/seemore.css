@@ -1,0 +1,71 @@
+
+
+.see-more-container{
+    display: flex;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    background-image: url(../images/sik.png);
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width: 150px;
+    height:150px;
+    filter: invert(100%);
+}
+
+
+.container-image{
+    display:flex;
+    gap: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.coluna-image{
+    display:grid;
+    gap: 120px;
+}
+
+.seemore-cont{
+    display:flex;
+    margin: 50px;
+    gap: 150px;
+}
+.mais-texto{
+    font-family: 'Sarabun', sans-serif;
+    font-size: 26px;
+}
+
+.mais-texto p{
+    max-width: 650px;
+    font-size: 40px;
+    font-family: "IBM Plex Mono";
+
+}
+.relogio{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+}
+.maos{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+}
+.language{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 336px;
+}
+.location{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
