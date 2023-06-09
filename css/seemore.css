@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: center;
 }
+
 img{
     width: 150px;
     height:150px;
@@ -35,35 +36,40 @@ img{
     margin: 50px;
     gap: 150px;
 }
+
 .mais-texto{
-    font-family: 'Sarabun', sans-serif;
+    font-family: 'IBM Plex Mono', sans-serif;
     font-size: 26px;
 }
 
 .mais-texto p{
     max-width: 650px;
     font-size: 40px;
-    font-family: "IBM Plex Mono";
-
+    font-family: "Sarabun";
+    font-weight: 100;
 }
+
 .relogio{
     display: grid;
     align-items: center;
     justify-items: center;
 
 }
+
 .maos{
     display: grid;
     align-items: center;
     justify-items: center;
 
 }
+
 .language{
     display: grid;
     align-items: center;
     justify-items: center;
     width: 336px;
 }
+
 .location{
     display: grid;
     align-items: center;

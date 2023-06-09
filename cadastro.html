@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="./componentes/navbar.css">
     <link rel="stylesheet" href="./componentes/footer.css">
 
-
     <title>TeamFinder</title>
 </head>
 <body>
@@ -30,24 +29,26 @@
          <!--container do cadastro-->
         <div class="cadastro-title">CADASTRE-SE</div>
          <div class="form-container">
-            <form class="form-elements">
-                <label for="id">ID DE USUÁRIO</label>
-                <input type="text" id="id" placeholder="Digite seu ID">
-                <label for="ano">ANO DE NASCIMENTO</label>
-                <input type="date" id="ano">
-                <label for="local">LOCALIDADE</label>
-                <input type="text" id="local" placeholder="Qual cidade você mora?">
-                <label for="senha">SENHA</label>
-                <input type="password" id="senha" placeholder="Digite sua senha">
-                <label for="confsenha">CONFIRMAR SENHA</label>
-                <input type="password" id="confsenha" placeholder="Confirme sua senha">
+            <form class="form-elements" action="info.html" id="form">
+                <label for="id">Id de usuário</label>
+                <input type="text" id="id" placeholder="Digite seu ID" class="input-field id">
+                <label for="ano">Ano de nascimento</label>
+                <input type="date" id="ano" class="input-field ano">
+                <label for="local">Localidade</label>
+                <input type="text" id="local" placeholder="Qual cidade você mora?" class="input-field local">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Digite sua senha" class="input-field senha">
+                <label for="confsenha">Confirmar senha</label>
+                <input type="password" id="confsenha" placeholder="Confirme sua senha" class="input-field confirma-senha">
+                <div class="button-container">
+                    <button class="form-button">CADASTRAR</button>
+                </div>
             </form>
-             <div class="button-container">
-                 <a href="info.html"> <button class="form-button">CADASTRAR</button></a>
-             </div>
+             
         </div>
     </div>
 </body>
+<script src="./JS/checagemForm.js"></script>
 <footer class="footer-background">
     <div class="footer-content">
         <div class="footer-text"><span style="color: rgb(255, 87, 87)">Team</span><i>Finder</i> © 2023</div>
