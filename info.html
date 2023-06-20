@@ -97,7 +97,7 @@
             <div class="card-content">
                 <h1 class="card-label">Escolha o seu idioma</h1>
                 <div>
-                    <select class="rolldown main-agent" name="Main" id="lingua">
+                    <select class="rolldown main-agent" name="Main" id="linguadrop" onchange="atulingua()">
                         <option value="">Selecione uma opção:</option>
                         <option value="portugues">Português</option>
                         <option value="ingles">Inglês</option>
@@ -107,7 +107,7 @@
                     </select>
                 </div>
                 <div class="card-img-container">
-                    <img src="images/valorant-logo.png" width="170px" id="imglingua">
+                    <img src="images/valorant-logo.png" width="170px" id="imagemlingua">
                 </div>
             </div>
         </div>
@@ -115,7 +115,7 @@
             <div class="card-content">
                 <h1 class="card-label">Seus dias disponíveis</h1>
                 <div>
-                    <select class="rolldown main-agent" name="Main" id="dia">
+                    <select class="rolldown main-agent" name="Main" id="dia" onchange="atudia()">
                         <option value="">Selecione uma opção:</option>
                         <option value="segunda">Segunda</option>
                         <option value="terca">Terça</option>

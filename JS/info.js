@@ -113,8 +113,57 @@ function atumain() {
 
 function atulingua() {
 
+    var lingua = document.getElementById("linguadrop");
+    var imagemlingua = document.getElementById("imagemlingua")
+
+    if (lingua.value == ''){
+        imagemlingua.src = "./images/valorant-logo.png"
+        imagem.alt = "Logo Valorant"
+    } else if (lingua.value == 'portugues'){
+        imagemlingua.src = "./images/banbra.png"
+        imagem.alt = "Português"
+    } else if (lingua.value == "ingles"){
+        imagemlingua.src = "./images/baneua.png"
+        imagem.alt = "Inglês"
+    } else if (lingua.value == "espanhol"){
+        imagemlingua.src = "./images/banesp.png"
+        imagem.alt = "Espanhol"
+    } else if (lingua.value == "russo"){
+        imagemlingua.src = "./images/banrus.png"
+        imagem.alt = "Russo"
+    } else if (lingua.value == "alemao"){
+        imagemlingua.src = "./images/banger.png"
+        imagem.alt = "Alemão"
+    }
+
 }
 
 function atudia() {
+
+    var dia = document.getElementById("dia")
+    var imgdia = document.getElementById("imgdia")
+
+    if (dia.value == ''){
+        imgdia.src = "./images/valorant-logo.png"
+        imgdia.alt = "Logo valorant"
+    } else if (dia.value == 'segunda'){
+        imgdia.src = "./images/seg.png"
+        imgdia.alt = "Segunda"
+    } else if (dia.value = 'terca'){
+        imgdia.src = "./images/ter.png"
+        imgdia.alt = "Terça"
+    } else if (dia.value == 'quarta'){
+        imgdia.src = "./images/qua.png"
+        imgdia.alt = "Quarta"
+    } else if (dia.value == 'quinta'){
+        imgdia.src = "./images/qui.png"
+        imgdia.alt = "Quinta"
+    } else if (dia.value == 'sexta'){
+        imgdia.src = "./images/sex.png"
+        imgdia.alt = "Sexta"
+    } else if (dia.value == 'sabado'){
+        imgdia.src = "./images/sab.png"
+        imgdia.alt = "Sábado"
+    }
 
 }
